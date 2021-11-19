@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#logo {
+  display: inline-block;
+  font-size: 32px;
+  font-weight: 700;
+  padding-right: 32px;
+}
+
+#nav-links-container {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#nav-links-container li {
+    display: inline-block;
+}
+
+#img-container{
+    width: 50vw;
+    display: inline-block;
+}
+
+#cart {
+}
+
+#profile {
+}
