@@ -5,8 +5,6 @@
 }
 
 nav {
-  height: 10vh;
-  margin: 16px 32px;
 }
 
 a{
@@ -18,26 +16,21 @@ a{
   font-size: 32px;
   font-weight: 700;
   padding-right: 32px;
-  width: 10vw;
 }
 
 #nav-links-container {
     display: inline-block;
     margin-right: 40px;
     margin-left: 40px;
-    width: 60vw;
 }
 
 #nav-links-container li {
     display: inline-block;
-    margin-left: 8px;
-    margin-right: 8px;
 }
 
 #img-container{
     width: 50vw;
     display: inline-block;
-    width: 10vw;
 }
 
 #cart {
