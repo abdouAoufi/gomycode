@@ -1,40 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;900&display=swap');
+
+body{
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-nav {
+a {
+  text-decoration: none;
+  color: black;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+nav {
+  padding-right: 52px;
+  padding-left: 52px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
+
 #logo {
   display: inline-block;
-  font-size: 32px;
-  font-weight: 700;
-  padding-right: 32px;
+  /* margin-right: 32px; */
+  width: 20vw;
 }
 
 #nav-links-container {
-    display: inline-block;
-    margin-right: 40px;
-    margin-left: 40px;
+  width: 50vw;
+  display: inline-block;
+  /* margin-right: 400px; */
 }
 
 #nav-links-container li {
-    display: inline-block;
+  display: inline-block;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
-#img-container{
-    width: 50vw;
-    display: inline-block;
+#img-container {
+  width: 15vw;
+  display: inline-block;
 }
 
 #cart {
+  margin-right: 20px;
 }
 
-#profile {
+.image-container {
+  float: left;
+  width: 45%;
+  display: inline-block;
 }
+
+.text-container {
+  display: inline-block;
+  float: right;
+  width: 48%;
+  height: 400px;
+}
+
+.text-container p:nth-child(1){
+  color: hsl(26, 100%, 55%);
+}
+
+section{
+  margin-top: 60px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+ 
+#title{
+  margin-top: 16px;
+  font-size: 44px;
+}
+
+#par{
+  padding-top: 45px;
+}
+
+
+#money{
+  margin-top: 20px;
+}
+
+
+#price{
+  font-size: 32px;
+  font-weight: 700;
+  margin-right: 12px;
+}
+
+#percent{
+  font-size: 32px;
+  color: hsl(26, 100%, 55%);
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-block;
+  background: hsl(25, 100%, 94%);
+}
+
+#price-org{
+margin-top: 12px;
+color: #c5c5c5;
+font-size: 18px;
+font-weight: 600;
+text-decoration: line-through;
+}
+
+
