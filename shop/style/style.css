@@ -49,10 +49,18 @@ nav {
   margin-right: 20px;
 }
 
+#small-img-container img{
+  border-radius: 8px;
+}
 .image-container {
   float: left;
   width: 45%;
   display: inline-block;
+}
+
+#mysvg{
+  height: 20px;
+  width: 20px;
 }
 
 .text-container {
@@ -81,6 +89,9 @@ section{
   padding-top: 45px;
 }
 
+#present-img{
+  border-radius: 8px;
+}
 
 #money{
   margin-top: 20px;
