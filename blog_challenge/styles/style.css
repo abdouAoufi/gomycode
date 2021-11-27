@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+nav {
+  padding: 1rem 0;
+}
+
+.nav-inner-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header {
+  background: linear-gradient(18deg, rgba(255,82,93,1) 35%, rgba(255,122,133,1) 100%);
+  color: white; 
+  position: relative;
+  border-bottom-left-radius: 6rem;
+
+}
+#bg-img{
+  position: absolute;
+  right : 3.5rem;
+  top: 2rem;
+}
+
+.phone-container{
+  background: rgb(106,36,189);
+  background: linear-gradient(23deg, rgba(106,36,189,1) 14%, rgba(58,249,255,1) 100%); 
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  color: white;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.25rem;
+  border-radius: 1.2rem;
+  border: 0;
+  background-color: white;
+  border: 1px solid red;
+}
+
+#logo {
+  padding-right: 60px;
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.text-nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.single-link {
+  margin: 0 1rem;
+}
+
+
+
+.single-link a {
+  text-decoration: none;
+  color: white;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-header h1 {
+  margin-top: 3rem;
+}
+
+.main-header p {
+  margin-top: 1rem;
+}
+
+.btn-head-container {
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+#subtitle {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 0 8rem;
+}
+
+.header-container h3 {
+  margin-top: 2.5rem;
+}
+
+.header-container p {
+  margin-top: 1.5rem;
+}
+
+
+.fixed{
+  width: 40px;
+  height: 40px;
+  background-color: violet;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: 50%;
+}
