@@ -20,21 +20,28 @@ nav {
   align-items: center;
 }
 header {
-  background: linear-gradient(18deg, rgba(255,82,93,1) 35%, rgba(255,122,133,1) 100%);
-  color: white; 
+  background: linear-gradient(
+    18deg,
+    rgba(255, 82, 93, 1) 35%,
+    rgba(255, 122, 133, 1) 100%
+  );
+  color: white;
   position: relative;
   border-bottom-left-radius: 6rem;
-
 }
-#bg-img{
+#bg-img {
   position: absolute;
-  right : 3.5rem;
+  right: 3.5rem;
   top: 2rem;
 }
 
-.phone-container{
-  background: rgb(106,36,189);
-  background: linear-gradient(23deg, rgba(106,36,189,1) 14%, rgba(58,249,255,1) 100%); 
+.phone-container {
+  background: rgb(106, 36, 189);
+  background: linear-gradient(
+    23deg,
+    rgba(106, 36, 189, 1) 14%,
+    rgba(58, 249, 255, 1) 100%
+  );
   border-bottom-left-radius: 5rem;
   border-top-right-radius: 5rem;
   color: white;
@@ -67,8 +74,6 @@ button {
 .single-link {
   margin: 0 1rem;
 }
-
-
 
 .single-link a {
   text-decoration: none;
@@ -113,8 +118,7 @@ button {
   margin-top: 1.5rem;
 }
 
-
-.fixed{
+.fixed {
   width: 40px;
   height: 40px;
   background-color: violet;
@@ -122,4 +126,29 @@ button {
   bottom: 2rem;
   right: 2rem;
   border-radius: 50%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 3rem;
+  justify-items: center;
+  padding: 2rem ;
+  background: black;
+  color: white;
+  border-top-right-radius: 5rem;
+}
+
+footer ul {
+  margin-top: 2rem;
+  list-style: none;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li {
+  margin-top: .5rem;
 }
