@@ -33,6 +33,7 @@ header {
   position: absolute;
   right: 3.5rem;
   top: 2rem;
+  z-index: 10;
 }
 
 .phone-container {
@@ -84,6 +85,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 100;
 }
 
 .main-header h1 {
@@ -107,6 +109,8 @@ button {
 .container {
   display: flex;
   align-items: center;
+ 
+  /* justify-content: space-around; */
   padding: 0 8rem;
 }
 
@@ -151,4 +155,27 @@ footer ul li a {
 
 footer ul li {
   margin-top: .5rem;
+}
+
+
+@media screen and (max-width : 600px) {
+
+   .nav-links{
+     display: none;
+   }
+  #bg-img{
+    display: none;
+  }
+
+  footer{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer div {
+    margin-top: 3rem;
+  }
+
+  .container{
+    flex-wrap: wrap;
+  }
 }

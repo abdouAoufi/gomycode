@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+#dark {
+  color: white;
+  background-color: black;
+  padding: 8px 12px;
+}
+
+nav ul li {
+  margin: 0 2rem;
+}
+
+.main-section {
+  margin-top: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.text-container h2 {
+  font-size: 32px;
+}
+
+.text-container p {
+  margin-top: 1rem;
+}
+
+.text-container button {
+  margin-top: 1rem;
+  background-color: black;
+  font-weight: 600;
+  color: white;
+  border: 0;
+  border-radius: 0.8rem;
+  padding: 0.8rem 1.5rem;
+}
+
+#last-name {
+  color: rgb(192, 192, 39);
+}
