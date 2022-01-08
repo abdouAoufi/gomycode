@@ -1,117 +1,117 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 body {
-  font-family: "Spartan", sans-serif;
-  display: flex;
-  justify-content: center;
+    font-family: "Spartan", sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
 .main-section {
-  background-color: hsl(222, 26%, 31%);
-  padding: 16px;
-  width: 35%;
-  height: 100vh;
+    background-color: hsl(222, 26%, 31%);
+    padding: 16px;
+    width: 55%;
+    height: 100vh;
 }
 
 .inner-nav {
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #title {
-  font-size: 25px;
+    font-size: 25px;
 }
 
 .status-container {
-  display: flex;
-  gap: 12px;
-  align-items: flex-end;
+    display: flex;
+    gap: 12px;
+    align-items: flex-end;
 }
 
 #circle {
-  width: 15px;
-  height: 15px;
-  background-color: red;
-  border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
 }
 
 .num-pad {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 #on {
-  padding: 8px;
-  width: 72px;
-  border-radius: 16px;
-  border: 0;
+    padding: 8px;
+    width: 72px;
+    border-radius: 16px;
+    border: 0;
 }
 
 .display {
-  color: white;
-  border-radius: 8px;
-  background-color: hsl(223, 31%, 20%);
-  margin-top: 16px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 14px 10px 14px 10px;
+    color: white;
+    border-radius: 8px;
+    background-color: hsl(223, 31%, 20%);
+    margin-top: 16px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 14px 10px 14px 10px;
 }
 
 .big-buttons-container {
-  border-radius: 8px;
-  background-color: hsl(224, 36%, 15%);
-  margin-top: 20px;
-  padding: 16px;
+    border-radius: 8px;
+    background-color: hsl(224, 36%, 15%);
+    margin-top: 20px;
+    padding: 16px;
 }
 
 .row-button {
-  margin-top: 24px;
+    margin-top: 24px;
 }
 
 .button-list {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .single-button {
-  border: 0;
-  font-weight: 700;
-  font-size: 24px;
-  width: 60px;
-  height: 60px;
-  border-radius: 6px;
-  border-bottom: 4px solid hsl(28, 16%, 65%);
+    border: 0;
+    font-weight: 700;
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 6px;
+    border-bottom: 4px solid hsl(28, 16%, 65%);
 }
 
 .purple-btn {
-  border-bottom: 4px solid hsl(224, 28%, 35%);
-  background-color: hsl(225, 21%, 49%);
+    border-bottom: 4px solid hsl(224, 28%, 35%);
+    background-color: hsl(225, 21%, 49%);
 }
 
 #equal {
-  background-color: hsl(6, 63%, 50%);
-  border-bottom: 4px solid hsl(6, 70%, 34%);
+    background-color: hsl(6, 63%, 50%);
+    border-bottom: 4px solid hsl(6, 70%, 34%);
 }
+
 .b-button {
-  color: white;
-  border: 0;
-  border-bottom: 4px solid hsl(224, 28%, 35%);
-  width: 100px;
-  height: 60px;
-  font-weight: 700;
-  font-size: 24px;
-  border-radius: 6px;
+    color: white;
+    border: 0;
+    border-bottom: 4px solid hsl(224, 28%, 35%);
+    width: 100px;
+    height: 60px;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 6px;
 }

@@ -2,90 +2,91 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-  <title>First try Flex</title>
-  <link rel="stylesheet" href="./style/style.css">
+    <title>First try Flex</title>
+    <link rel="stylesheet" href="./style/style.css" />
 </head>
 
 <body>
+    <section class="main-section">
+        <nav>
+            <div class="inner-nav">
+                <h1 id="title">calc</h1>
+                <div class="status-container">
+                    <div class="button-container">
+                        <div class="num-pad">
+                            <p>off</p>
+                            <p>on</p>
+                        </div>
 
-  <section class="main-section">
-    <nav>
-      <div class="inner-nav">
-        <h1 id="title">calc</h1>
-        <div class="status-container">
-          <p>theme</p>
-          <div class="button-container">
-            <div class="num-pad">
-              <p>1</p>
-              <p>2</p>
-              <p>3</p>
+                        <button style="display: flex; justify-content: flex-start" id="on">
+                <div id="circle"></div>
+              </button>
+                    </div>
+                </div>
             </div>
+        </nav>
 
-            <button id="on">
-              <div id="circle"></div>
-            </button>
-          </div>
+        <div class="display">
+            <h1 style="height: 20px" id="screen"></h1>
         </div>
-      </div>
-    </nav>
 
-    <div class="display">
-      <h1>399,981</h1>
-    </div>
-
-    <div class="big-buttons-container">
-      <!-- 7 - 8 - 9 - DEL -->
-      <div class="row-button">
-        <ul class="button-list">
-          <li><button class="single-button">7</button></li>
-          <li><button class="single-button">8</button></li>
-          <li><button class="single-button">9</button></li>
-          <li><button  class="single-button purple-btn">DEL</button></li>
-        </ul>
-      </div>
-      <!-- 4 - 5 - 6 - + -->
-      <div class="row-button">
-        <ul class="button-list">
-          <li><button class="single-button">4</button></li>
-          <li><button class="single-button">5</button></li>
-          <li><button class="single-button">6</button></li>
-          <li><button class="single-button">+</button></li>
-        </ul>
-      </div>
-      <!-- 1 - 2 - 3 - - -->
-      <div class="row-button">
-        <ul class="button-list">
-          <li><button class="single-button">1</button></li>
-          <li><button class="single-button">2</button></li>
-          <li><button class="single-button">3</button></li>
-          <li><button class="single-button">-</button></li>
-        </ul>
-      </div>
-      <!-- . - 0 - / - x-->
-      <div class="row-button">
-        <ul class="button-list">
-          <li><button class="single-button">.</button></li>
-          <li><button class="single-button">0</button></li>
-          <li><button class="single-button">/</button></li>
-          <li><button class="single-button">x</button></li>
-        </ul>
-      </div>
-      <!-- RESET - = -->
-      <div class="row-button">
-        <ul class="button-list">
-          <li><button class="b-button purple-btn">RESET</button></li>
-          <li><button id="equal" class="b-button">=</button></li>
-        </ul>
-      </div>
-    </div>
-
-  </section>
+        <div class="big-buttons-container">
+            <!-- 7 - 8 - 9 - DEL -->
+            <div class="row-button">
+                <ul class="button-list">
+                    <li><button id="7" class="single-button">7</button></li>
+                    <li><button id="8" class="single-button">8</button></li>
+                    <li><button id="9" class="single-button">9</button></li>
+                    <li>
+                        <button id="delete" class="single-button purple-btn">DEL</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- 4 - 5 - 6 - + -->
+            <div class="row-button">
+                <ul class="button-list">
+                    <li><button id="4" class="single-button">4</button></li>
+                    <li><button id="5" class="single-button">5</button></li>
+                    <li><button id="6" class="single-button">6</button></li>
+                    <li><button id="plus" class="single-button">+</button></li>
+                </ul>
+            </div>
+            <!-- 1 - 2 - 3 - - -->
+            <div class="row-button">
+                <ul class="button-list">
+                    <li><button id="1" class="single-button">1</button></li>
+                    <li><button id="2" class="single-button">2</button></li>
+                    <li><button id="3" class="single-button">3</button></li>
+                    <li><button id="-" class="single-button">-</button></li>
+                </ul>
+            </div>
+            <!-- . - 0 - / - x-->
+            <div class="row-button">
+                <ul class="button-list">
+                    <li><button id="point" class="single-button">.</button></li>
+                    <li><button id="0" class="single-button">0</button></li>
+                    <li><button id="devide" class="single-button">/</button></li>
+                    <li><button id="multiply" class="single-button">x</button></li>
+                </ul>
+            </div>
+            <!-- RESET - = -->
+            <div class="row-button">
+                <ul class="button-list">
+                    <li>
+                        <button id="reset" class="b-button purple-btn">RESET</button>
+                    </li>
+                    <li><button id="equal" class="b-button">=</button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="./script/app.js"></script>
 </body>
 
 </html>
