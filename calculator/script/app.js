@@ -14,11 +14,15 @@ const equal = document.getElementById("equal");
 const zero = document.querySelector("#zero");
 const reset = document.querySelector("#reset");
 const del = document.querySelector("#delete");
+const minus = document.querySelector("#minus");
+const multiply = document.querySelector("#multiply");
+const devide = document.querySelector("#devide");
 
 let currentNumber = "";
 let isOn = false;
 let n1 = "";
 let n2 = "";
+let operation = "";
 
 function on() {
     ecran.innerText = "0";
@@ -29,6 +33,7 @@ function on() {
 function off() {
     ecran.innerText = "";
     currentNumber = "";
+    n1 = "";
     power.style.justifyContent = "flex-start";
     isOn = !isOn;
 }
@@ -40,7 +45,11 @@ del.onclick = () => {
         // currentNumber = currentNumber.slice(0, currentNumber.length - 1);
         currentNumber = currentNumber.slice(0, -1);
     }
-    ecran.innerText = currentNumber;
+    if (n1.length > 0) {
+        ecran.innerText = n1 + operation + currentNumber;
+    } else {
+        ecran.innerText = currentNumber;
+    }
 };
 
 power.addEventListener("click", function() {
@@ -61,7 +70,7 @@ function handleNumbers(number) {
         if (currentNumber.length <= 10) {
             currentNumber = currentNumber + number;
             if (n1.length > 0) {
-                ecran.innerText = n1 + "+" + currentNumber;
+                ecran.innerText = n1 + operation + currentNumber;
             } else {
                 ecran.innerText = currentNumber;
             }
@@ -97,10 +106,58 @@ zero.onclick = function() {
 plus.addEventListener("click", () => {
     n1 = currentNumber;
     currentNumber = "";
-    ecran.innerText = n1 + "+";
+    operation = "+";
+    ecran.innerText = n1 + operation;
 });
 
+minus.onclick = function() {
+    n1 = currentNumber;
+    currentNumber = "";
+    operation = "-";
+    ecran.innerText = n1 + operation;
+};
+
+multiply.onclick = () => {
+    n1 = currentNumber;
+    currentNumber = "";
+    operation = "x";
+    ecran.innerText = n1 + operation;
+};
+
+devide.onclick = () => {
+    n1 = currentNumber;
+    currentNumber = "";
+    operation = "/";
+    ecran.innerText = n1 + operation;
+};
+
 equal.addEventListener("click", function() {
-    let result = parseInt(n1) + parseInt(currentNumber);
-    ecran.innerText = result;
+    let number1 = parseInt(n1);
+    let number2 = parseInt(currentNumber);
+    let result = 0;
+    /* if (operation === "+") {
+          result = number1 + number2;
+      } else if (operation === "-") {
+          result = number1 - number2;
+      } else if (operation === "x") {
+          result = number1 * number2;
+      } else {
+          result = number1 / number2;
+      } */
+    switch (operation) {
+        case "+":
+            result = number1 + number2;
+            break;
+        case "-":
+            result = number1 - number2;
+            break;
+        case "x":
+            result = number1 * number2;
+            break;
+        default:
+            result = number1 / number2;
+    }
+    n1 = "";
+    currentNumber = result.toString();
+    ecran.innerText = currentNumber;
 });
